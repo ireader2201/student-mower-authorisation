@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <script >
+    var settings = {
+      "url": "http://localhost:8080/api/users/",
+      "method": "GET",
+      "timeout": 0,
+      "headers": {
+        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvYXBpL2F1dGhlbnRpY2F0ZSIsImlhdCI6MTY1MDM0NDIwNSwiZXhwIjoxNjUwMzQ3ODA1LCJuYmYiOjE2NTAzNDQyMDUsImp0aSI6IkFYZWNGMVpvWE9YTEFaM0YiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.GQ-3ZQsjAIfzPCnQYumHtX9ht3DAO5S6OszpXURye3I",
+        "Content-Type": "application/json"
+      },
+    };
+    
+    $.ajax(settings).done(function (response) {
+      console.log(response);
+    });
+  </script> 
+</html>
